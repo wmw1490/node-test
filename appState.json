@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "node-test/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    let bucketname = 's3-bucket-ww'\n    let fname = 's3-fname'\n    console.log('Node-testing.....' + bucketname )\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    let bucketname = 's3-bucket-ww'\n    let fname = 's3-fname'\n    console.log('Node-testing.....' + bucketname + '/' + fname)\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -65,7 +65,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1572831055390
+    "lastSave": 1572831535025
   },
   "VCS_STATE": {
     "provider": "GitHub",
