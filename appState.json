@@ -1,0 +1,77 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "82834c69-053a-4921-b160-07d504feceea": {
+        "id": "82834c69-053a-4921-b160-07d504feceea",
+        "parent": null,
+        "name": "node-test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "bfdd5c70-487f-4333-beb8-a304c1af3b21"
+        ],
+        "isRemovable": false,
+        "filePath": "node-test"
+      },
+      "bfdd5c70-487f-4333-beb8-a304c1af3b21": {
+        "id": "bfdd5c70-487f-4333-beb8-a304c1af3b21",
+        "parent": "82834c69-053a-4921-b160-07d504feceea",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "node-test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log('Node-testing.....')\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "82834c69-053a-4921-b160-07d504feceea",
+    "openFiles": [
+      "bfdd5c70-487f-4333-beb8-a304c1af3b21"
+    ],
+    "currentFileId": "bfdd5c70-487f-4333-beb8-a304c1af3b21",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "node-test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1572830426481
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "node-test",
+      "url": "https://github.com/wmw1490/node-test"
+    }
+  }
+}
